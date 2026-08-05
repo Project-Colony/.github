@@ -16,7 +16,7 @@
 <p align="center">
 	<a href="https://github.com/Project-Colony"><img src="https://img.shields.io/badge/organization-Project--Colony-b4befe?style=for-the-badge&logo=github&logoColor=cdd6f4&labelColor=1e1e2e" alt="Organization"></a>
 	<a href="https://github.com/Project-Colony/Colony"><img src="https://img.shields.io/badge/status-early%20development-fab387?style=for-the-badge&logoColor=cdd6f4&labelColor=1e1e2e" alt="Status"></a>
-	<a href="https://github.com/Project-Colony/orCAL/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-a6e3a1?style=for-the-badge&logoColor=cdd6f4&labelColor=1e1e2e" alt="License"></a>
+	<a href="https://github.com/Project-Colony/Colony/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-GPL--3.0--or--later-a6e3a1?style=for-the-badge&logoColor=cdd6f4&labelColor=1e1e2e" alt="License"></a>
 </p>
 
 &nbsp;
@@ -132,8 +132,9 @@ Pick one, open an issue or submit a PR.
 <h3 align="center">📄 License</h3>
 
 <p align="center">
-Colony and its applications are released under the <b>MIT License</b>.<br/>
-For more details, see the LICENSE file in each repository.
+Colony and its applications are released under the <b>GNU General Public License v3.0 or later</b>.<br/>
+This is copyleft: you are free to use, study, share and modify them, provided<br/>
+derivative works keep the same freedoms. See the LICENSE file in each repository.
 </p>
 
 &nbsp;
