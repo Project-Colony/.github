@@ -26,14 +26,14 @@
 &nbsp;
 
 <p align="center">
-Colony is an ecosystem of small, focused desktop utilities built with Rust.<br/>
-Instead of one monolithic tool that does everything poorly, Colony offers a curated set of apps —<br/>
-each designed to do one thing exceptionally well, with native performance and beautiful, themeable interfaces.
+Colony is an ecosystem of small, focused desktop utilities, nearly all of them built with Rust.<br/>
+Instead of one monolithic tool that does everything poorly, Colony offers a curated set of apps,<br/>
+each designed to do one thing well, with native performance and themeable interfaces.
 </p>
 
 <p align="center">
 The <a href="https://github.com/Project-Colony/Colony">Colony launcher</a> ties them together: it installs, updates and launches<br/>
-every app in this organization, and lists the apps already on your system alongside them.
+every app that publishes a <code>colony.json</code> manifest, and lists the apps already on your system alongside them.
 </p>
 
 &nbsp;
@@ -42,16 +42,38 @@ every app in this organization, and lists the apps already on your system alongs
 
 <div align="center">
 
-| App | What it does | Platforms |
-|:---|:---|:---:|
-| **[Colony](https://github.com/Project-Colony/Colony)** | Launcher and app store for the whole ecosystem | Linux · Windows · macOS |
-| **[Eidos](https://github.com/Project-Colony/Eidos)** | Mod manager for Bethesda games — merges mods into a FUSE union at launch, so the game directory is never touched | Linux |
-| **[SphereCord](https://github.com/Project-Colony/SphereCord)** | Discord client with Equicord preinstalled and the Colony palettes bundled in | Linux · Windows |
-| **[Spotter](https://github.com/Project-Colony/Spotter)** | Game library tracker — imports Steam, GOG, Epic, Xbox and PlayStation, follows playtime and achievements | Linux · Windows · macOS |
-| **[Grape](https://github.com/Project-Colony/Grape)** | Music player for a local library, with tag and cover reading and a built-in equalizer | Linux · Windows · macOS |
-| **[D1Gg2r](https://github.com/Project-Colony/D1Gg2r)** | System monitor — live CPU, memory, disk, network, temperature and GPU, with persistent history | Linux · Windows · macOS |
-| **[orCAL](https://github.com/Project-Colony/orCAL)** | Desktop calculator, in a phone-shaped window or a tablet one with a scientific keypad | Linux · Windows · macOS |
-| **[SAM · Colony Edition](https://github.com/Project-Colony/SAM-Colony-Edition)** | Steam achievement manager — browse, unlock and edit the stats of games you own | Linux · Windows · macOS |
+| App | What it does | Builds | In Colony |
+|:---|:---|:---:|:---:|
+| **[Colony](https://github.com/Project-Colony/Colony)** | Launcher and app store for the whole ecosystem | Linux · Windows · macOS | it *is* the store |
+| **[Eidos](https://github.com/Project-Colony/Eidos)** | Native Linux mod manager for Bethesda games: mods are merged into a private, per-launch FUSE view, so the game directory is never touched | Linux | ✅ |
+| **[Colony Firewall Control](https://github.com/Project-Colony/Colony-Firewall-Control)** | Application-aware outbound firewall, a Rust port of opensnitch with per-app prompts, a CLI and a tray companion | Linux | not yet |
+| **[Raven](https://github.com/Project-Colony/Raven)** | Experimental: runs Windows programs from Linux against a real Windows installation mounted as C:, with Wine kept only at the syscall boundary | Linux | ✅ |
+| **[Grape](https://github.com/Project-Colony/Grape)** | Music player for the music you already own: your folder is the library, with tag and cover art reading | Linux · Windows · macOS | ✅ |
+| **[SphereCord](https://github.com/Project-Colony/SphereCord)** | Discord client (a fork of Equibop) with Equicord preinstalled and the Colony palettes bundled in | Linux · Windows | ✅ Linux |
+| **[Spotter](https://github.com/Project-Colony/Spotter)** | Game library tracker: imports Steam, GOG, Epic, Xbox and PlayStation, follows playtime and achievements | Linux · Windows · macOS | ✅ |
+| **[D1Gg2r](https://github.com/Project-Colony/D1Gg2r)** | System monitor: live CPU, memory, disk, network, temperature, GPU and processes, with persistent history | Linux · Windows · macOS | ✅ |
+| **[orCAL](https://github.com/Project-Colony/orCAL)** | Desktop calculator, in a phone-shaped window or a tablet one with a scientific keypad | Linux · Windows · macOS | ✅ |
+| **[SAM · Colony Edition](https://github.com/Project-Colony/SAM-Colony-Edition)** | Steam achievement manager: browse, unlock and edit the stats of games you own | Linux · Windows · macOS | ✅ |
+| **[Lilypad](https://github.com/Project-Colony/Lilypad-Vault)** | Local-first password manager written in Rust. No release yet: it is listed in Colony, but the source and downloads arrive with its first release | none yet | listed only |
+
+</div>
+
+<p align="center">
+<sub>Linux is the supported platform: every app is developed and tested there.<br/>
+Windows and macOS builds are best-effort and are not code-signed, so expect SmartScreen and Gatekeeper warnings.</sub>
+</p>
+
+&nbsp;
+
+<h3 align="center">🧱 Infrastructure</h3>
+
+<div align="center">
+
+| Repository | What it is |
+|:---|:---|
+| **[Project-Colony-Resources](https://github.com/Project-Colony/Project-Colony-Resources)** | Shared design tokens and UI conventions, the `colony-ui` crate, the `colony.json` schema and the release workflow templates |
+| **[nix](https://github.com/Project-Colony/nix)** | Nix flake that packages Colony apps and tracks their releases automatically (SphereCord today) |
+| **[Arch-Colony](https://github.com/Project-Colony/Arch-Colony)** | Arch-derived Linux distribution (not a fork) with the Colony programs, a signed `[colony]` repository and a hardened base; early, with an installable ISO |
 
 </div>
 
@@ -60,25 +82,25 @@ every app in this organization, and lists the apps already on your system alongs
 <h3 align="center">🧠 Philosophy</h3>
 
 <p align="center">
-<b>One app, one purpose</b> — each Colony tool solves a single problem with clarity and precision.<br/>
+<b>One app, one purpose</b>: each Colony tool solves a single problem with clarity and precision.<br/>
 No feature bloat, no hidden complexity.
 </p>
 
 <p align="center">
-<b>Native performance matters</b> — nearly everything is built in Rust.<br/>
+<b>Native performance matters</b>: nearly everything is built in Rust.<br/>
 Startup is instant, memory usage is minimal, and your CPU stays cool.
 </p>
 
 <p align="center">
-<b>Beauty is not optional</b> — the apps share one theming system<br/>
-and adapt to your system's dark mode.<br/>
+<b>Beauty is not optional</b>: Colony, Eidos, Raven, Grape, D1Gg2r and Colony Firewall Control<br/>
+share one theme library, <code>colony-ui</code>, so a palette looks the same wherever you meet it.<br/>
 Tools should look as good as they work.
 </p>
 
 <p align="center">
-<b>Cross-platform by default</b> — most apps target Linux, Windows and macOS<br/>
-from the same source, on Apple Silicon and Intel alike.<br/>
-Only Eidos is Linux-only, because it is built on Linux mount namespaces.
+<b>Linux first, honestly</b>: Linux is where the apps are built, used daily and tested.<br/>
+Several apps also ship Windows and macOS builds from the same source, on Apple Silicon and Intel alike;<br/>
+those are best-effort, and bug reports from them are welcome.
 </p>
 
 &nbsp;
@@ -93,9 +115,9 @@ Only Eidos is Linux-only, because it is built on Linux mount namespaces.
 | **GUI frameworks** | Iced, Tauri, Electron |
 | **Data** | SQLite (via rusqlite), TOML and JSON on disk |
 | **Secrets** | OS keyring (Secret Service, Credential Manager, Keychain) |
-| **System access** | FUSE and mount namespaces, NVML (NVIDIA), sysfs (AMD/Intel) |
-| **Platforms** | Linux, Windows, macOS |
-| **Release** | GitHub Actions, release-please, AUR |
+| **System access** | FUSE and mount namespaces, NFQUEUE and eBPF, NVML (NVIDIA), sysfs (AMD/Intel) |
+| **Platforms** | Linux (supported), Windows and macOS (best-effort) |
+| **Release** | GitHub Actions, release-please, AUR, Nix |
 
 </div>
 
@@ -104,7 +126,7 @@ Only Eidos is Linux-only, because it is built on Linux mount namespaces.
 <h3 align="center">🎨 Theming</h3>
 
 <p align="center">
-The launcher ships <b>57 palettes across 25 families</b>, compiled into the binary —<br/>
+The launcher ships <b>59 palettes across 26 families</b> from <code>colony-ui</code>, compiled into the binary:<br/>
 no theme files to download, no runtime parsing.
 </p>
 
@@ -113,7 +135,7 @@ no theme files to download, no runtime parsing.
 <td align="center">🐱 <b>Catppuccin</b><br/><sub>Latte · Frappé · Macchiato · Mocha</sub></td>
 <td align="center">🪵 <b>Gruvbox</b><br/><sub>Light · Dark</sub></td>
 <td align="center">❄️ <b>Nord</b><br/><sub>Dark · Light</sub></td>
-<td align="center">🌊 <b>Kanagawa</b><br/><sub>Wave · Dragon · Lotus</sub></td>
+<td align="center">🌊 <b>Kanagawa</b><br/><sub>Light · Dark · Journal · Dragon</sub></td>
 </tr>
 <tr>
 <td align="center">🌃 <b>Tokyo Night</b><br/><sub>Night · Day</sub></td>
@@ -124,14 +146,14 @@ no theme files to download, no runtime parsing.
 </table>
 
 <p align="center">
-<sub>…and Everblush, Solarized, One Dark, Monokai, Ayu, Material, Flexoki, Nightfox, Sonokai,<br/>
-Oxocarbon, Night Owl, Iceberg, Horizon, Melange, Synthwave '84, Modus, and a fan-made Stellar Blade set.</sub>
+<sub>...and Everblush, Solarized, One Dark, Monokai, Ayu, Material, Flexoki, Nightfox, Sonokai,<br/>
+Oxocarbon, Night Owl, Iceberg, Horizon, Melange, Synthwave '84, Modus, Parchment, and a fan-made Stellar Blade set.</sub>
 </p>
 
 <p align="center">
 Each theme combines with <b>8 accent colors</b>, and the same palettes are bundled into SphereCord,<br/>
-so your Discord client matches the rest of the desktop. A high-contrast mode<br/>
-and an OpenDyslexic option ship alongside them.
+so your Discord client matches the rest of the desktop. The launcher also offers<br/>
+a high-contrast mode and an OpenDyslexic font option.
 </p>
 
 &nbsp;
@@ -145,9 +167,9 @@ aborts the update instead of trusting it.
 </p>
 
 <p align="center">
-The apps in the store publish detached signatures against that same key.<br/>
+Store apps that declare <code>"signed": true</code> in their manifest publish detached signatures against that same key.<br/>
 Once an app has been installed with a verified signature, the launcher will<br/>
-refuse a later unsigned build of it — a repository cannot quietly stop signing.
+refuse a later unsigned build of it: a repository cannot quietly stop signing.
 </p>
 
 &nbsp;
@@ -155,13 +177,13 @@ refuse a later unsigned build of it — a repository cannot quietly stop signing
 <h3 align="center">🌍 Internationalization</h3>
 
 <p align="center">
-Interface translations are static string tables compiled into each binary —<br/>
-no runtime overhead, no external files, and fonts adapt to the active language.
+Interface translations are static string tables compiled into each binary:<br/>
+no runtime overhead and no external files.
 </p>
 
 <p align="center">
 D1Gg2r offers <b>50 selectable languages</b> (falling back to English where a translation is incomplete),<br/>
-while Colony and Grape are fully bilingual in <b>English and French</b>.
+while Colony and Grape are bilingual in <b>English and French</b>.
 </p>
 
 &nbsp;
@@ -171,9 +193,10 @@ while Colony and Grape are fully bilingual in <b>English and French</b>.
 <p align="center">Here's what's ahead:</p>
 
 <p align="center">
-◇ Lilypad, a local-first password manager, as the next app in the catalog<br/>
+◇ Lilypad's first release, with its source<br/>
+◇ Colony Firewall Control in the Colony store<br/>
 ◇ Wider translation coverage across the ecosystem<br/>
-◇ More packaging targets beyond the AUR<br/>
+◇ More packages in the Nix flake and the Arch Colony repository<br/>
 ◇ Community-contributed apps and themes
 </p>
 
@@ -183,12 +206,16 @@ while Colony and Grape are fully bilingual in <b>English and French</b>.
 
 <p align="center">
 Colony is open to contributions!<br/>
-Whether it's bug fixes, new utilities, theme additions, or translations — all help is welcome.
+Whether it's bug fixes, new utilities, theme additions, or translations, all help is welcome.
 </p>
 
 <p align="center">
 Each app lives in its own repository under the <a href="https://github.com/Project-Colony">Project-Colony</a> organization.<br/>
-Pick one, open an issue or submit a PR.
+Pick one, open an issue or submit a PR. Themes live in <a href="https://github.com/Project-Colony/Project-Colony-Resources">Project-Colony-Resources</a>.
+</p>
+
+<p align="center">
+Found a security problem? Please report it privately, as described in our <a href="https://github.com/Project-Colony/.github/blob/main/SECURITY.md">security policy</a>.
 </p>
 
 &nbsp;
