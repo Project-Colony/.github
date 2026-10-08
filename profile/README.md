@@ -33,7 +33,8 @@ each designed to do one thing well, with native performance and themeable interf
 
 <p align="center">
 The <a href="https://github.com/Project-Colony/Colony">Colony launcher</a> ties them together: it installs, updates and launches<br/>
-every app that publishes a <code>colony.json</code> manifest, and lists the apps already on your system alongside them.
+every app that publishes a <code>colony.json</code> manifest and a release build it can match to your platform,<br/>
+and lists the apps already on your system alongside them.
 </p>
 
 &nbsp;
@@ -45,7 +46,7 @@ every app that publishes a <code>colony.json</code> manifest, and lists the apps
 | App | What it does | Builds | In Colony |
 |:---|:---|:---:|:---:|
 | **[Colony](https://github.com/Project-Colony/Colony)** | Launcher and app store for the whole ecosystem | Linux · Windows · macOS | it *is* the store |
-| **[Eidos](https://github.com/Project-Colony/Eidos)** | Native Linux mod manager for Bethesda games: mods are merged into a private, per-launch FUSE view, so the game directory is never touched | Linux | ✅ |
+| **[Eidos](https://github.com/Project-Colony/Eidos)** | Native Linux mod manager for Bethesda games: mods are merged into a private, per-launch FUSE view, so the game directory is never touched. Listed in Colony, but installed from its release tarball with the bundled `install.sh` (or `makepkg` on Arch) | Linux | listed only |
 | **[Colony Firewall Control](https://github.com/Project-Colony/Colony-Firewall-Control)** | Application-aware outbound firewall, a Rust port of opensnitch with per-app prompts, a CLI and a tray companion | Linux | not yet |
 | **[Raven](https://github.com/Project-Colony/Raven)** | Experimental: runs Windows programs from Linux against a real Windows installation mounted as C:, with Wine kept only at the syscall boundary | Linux | ✅ |
 | **[Grape](https://github.com/Project-Colony/Grape)** | Music player for the music you already own: your folder is the library, with tag and cover art reading | Linux · Windows · macOS | ✅ |
@@ -73,7 +74,7 @@ Windows and macOS builds are best-effort and are not code-signed, so expect Smar
 |:---|:---|
 | **[Project-Colony-Resources](https://github.com/Project-Colony/Project-Colony-Resources)** | Shared design tokens and UI conventions, the `colony-ui` crate, the `colony.json` schema and the release workflow templates |
 | **[nix](https://github.com/Project-Colony/nix)** | Nix flake that packages Colony apps and tracks their releases automatically (SphereCord today) |
-| **[Arch-Colony](https://github.com/Project-Colony/Arch-Colony)** | Arch-derived Linux distribution (not a fork) with the Colony programs, a signed `[colony]` repository and a hardened base; early, with an installable ISO |
+| **[Arch-Colony](https://github.com/Project-Colony/Arch-Colony)** | Arch-derived Linux distribution (not a fork) with a signed `[colony]` repository and a hardened base; early, with an installable ISO. Of the Colony apps, `[colony]` ships only Colony Firewall Control so far; the rest is the distribution's own tooling (installer, `colonyctl`, keyring, mirrorlist) and `paru` |
 
 </div>
 
@@ -151,8 +152,8 @@ Oxocarbon, Night Owl, Iceberg, Horizon, Melange, Synthwave '84, Modus, Parchment
 </p>
 
 <p align="center">
-Each theme combines with <b>8 accent colors</b>, and the same palettes are bundled into SphereCord,<br/>
-so your Discord client matches the rest of the desktop. The launcher also offers<br/>
+Each theme combines with <b>8 accent colors</b>. SphereCord bundles 57 of the 59 palettes as Discord themes<br/>
+(all but Kanagawa Dragon and Parchment), so your Discord client matches the rest of the desktop. The launcher also offers<br/>
 a high-contrast mode and an OpenDyslexic font option.
 </p>
 
@@ -223,9 +224,7 @@ Found a security problem? Please report it privately, as described in our <a hre
 <h3 align="center">📄 License</h3>
 
 <p align="center">
-Colony and its applications are released under the <b>GNU General Public License v3.0 or later</b>.<br/>
-This is copyleft: you are free to use, study, share and modify them, provided<br/>
-derivative works keep the same freedoms. See the LICENSE file in each repository.
+All Project Colony apps are licensed under the <b>GNU General Public License v3.0 or later</b> (GPL-3.0-or-later).
 </p>
 
 &nbsp;
