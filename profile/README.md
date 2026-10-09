@@ -178,7 +178,7 @@ Each theme combines with <b>8 accent colors</b>. SphereCord bundles 57 of the 59
 
 <p align="center">
 Colony, D1Gg2r, Eidos, Grape, MemoryStick, Spotter and Xion offer a high-contrast mode,<br/>
-and Colony, D1Gg2r, Grape and MemoryStick can also switch the interface to the OpenDyslexic font.
+and Colony, Grape and MemoryStick can also switch the interface to the OpenDyslexic font.
 </p>
 
 &nbsp;
