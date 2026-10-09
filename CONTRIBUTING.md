@@ -53,4 +53,4 @@ reports written by an agent.
 
 By contributing, you agree that your contribution is licensed under the license
 of the repository it goes into: GPL-3.0-or-later, except for SAM - Colony
-Edition, which is GPL-3.0-only like its upstream.
+Edition, which is GPL-3.0-only.
