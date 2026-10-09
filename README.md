@@ -11,6 +11,10 @@ This is the community health repository of the [Project-Colony](https://github.c
 
 > **Status:** documentation only. There is no code here, and nothing is released from this repository.
 
+## Privacy
+
+This repository holds documentation only. It runs no code, and collects, stores and sends nothing.
+
 ## License
 
 Licensed under the [GNU General Public License v3.0 or later](LICENSE).
