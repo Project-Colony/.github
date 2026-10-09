@@ -80,8 +80,9 @@ Also in development, with no release yet: <a href="https://github.com/Project-Co
 > SAM · Colony Edition, Spotter and Xion, and SphereCord on Linux. Eidos and Exospine are listed only, and
 > Colony Firewall Control is not in the store yet. Every app Colony installs, and Colony itself, ships release
 > builds signed with the organization's ed25519 key. Linux is the supported platform, where the released apps
-> are developed and tested. Windows and macOS builds are best-effort and are not code-signed (no Authenticode,
-> no notarization), so expect SmartScreen and Gatekeeper warnings.
+> are developed and tested. Windows and macOS builds are best-effort and are not code-signed: the shared release
+> workflow can add Authenticode through SignPath, but no app has turned it on yet, and macOS builds are not
+> notarized, so expect SmartScreen and Gatekeeper warnings.
 
 &nbsp;
 
@@ -132,7 +133,7 @@ those are best-effort, and bug reports from them are welcome.
 | Layer | Technology |
 |:-----:|:----------:|
 | **Language** | Rust · TypeScript · JavaScript |
-| **UI frameworks** | Iced, Ratatui, Tauri, Electron |
+| **UI frameworks** | Iced, egui, Ratatui, Tauri, Electron |
 | **Data** | SQLite (via rusqlite), TOML and JSON on disk |
 | **Secrets** | OS keyring (Secret Service, Credential Manager, Keychain) |
 | **System access** | FUSE and mount namespaces, NFQUEUE and eBPF, NVML (NVIDIA), sysfs (AMD/Intel) |
@@ -210,7 +211,8 @@ no language packs to download and no external files.
 <p align="center">
 D1Gg2r offers <b>50 selectable languages</b> (falling back to English where a translation is incomplete),<br/>
 while Colony, Grape and MemoryStick are bilingual in <b>English and French</b>.<br/>
-Xion's interface is in French only for now, and the other apps are in English.
+Xion's interface is in French only for now, and the other released apps are in English,<br/>
+except SphereCord, which shows Discord's own interface in the language set in Discord.
 </p>
 
 &nbsp;
@@ -252,7 +254,7 @@ Found a security problem? Please report it privately, as described in our <a hre
 
 <p align="center">
 All Project Colony apps are licensed under the <b>GNU General Public License v3.0 or later</b> (GPL-3.0-or-later),<br/>
-except SAM · Colony Edition, which inherits upstream Samira's GPL-3.0.
+except SAM · Colony Edition, which is GPL-3.0-only.
 </p>
 
 <p align="center">
