@@ -254,7 +254,7 @@ Found a security problem? Please report it privately, as described in our <a hre
 
 <p align="center">
 All Project Colony apps are licensed under the <b>GNU General Public License v3.0 or later</b> (GPL-3.0-or-later),<br/>
-except SAM · Colony Edition, which is GPL-3.0-only.
+except SAM · Colony Edition, which is GPL-3.0, inherited from upstream <a href="https://github.com/jsnli/Samira">Samira</a>.
 </p>
 
 <p align="center">
