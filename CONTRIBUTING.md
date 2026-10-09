@@ -30,7 +30,10 @@ that repository's README or `docs/`.
   The usual types are `feat`, `fix`, `perf`, `refactor`, `docs`, `test`,
   `build`, `ci` and `chore`. A breaking change adds `!` after the type, as
   in `feat!: drop the old settings format`.
-- **Commit messages** follow the same convention.
+- **Commit messages** follow the same convention, and carry a body for the
+  person reading `git log` in a year: what was broken, what is now true, and
+  why the approach was chosen. The squash merge keeps the commit messages as
+  the body of the commit on the default branch.
 - **Tests:** run the repository's checks before you open the pull request, and
   add tests for new logic.
 - **Documentation:** a change that makes a README or `docs/` page wrong updates
