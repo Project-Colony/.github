@@ -74,11 +74,11 @@ Also in development, with no release yet: <a href="https://github.com/Project-Co
 <a href="https://github.com/Project-Colony/Avalon">Avalon</a> (writing studio), <a href="https://github.com/Project-Colony/GitSpace">GitSpace</a> (Git client),<br/>
 <a href="https://github.com/Project-Colony/KayaBot">KayaBot</a> (media renamer), <a href="https://github.com/Project-Colony/Oasis">Oasis</a> (weather notifications),
 <a href="https://github.com/Project-Colony/Roxanne">Roxanne</a> (code editor) and <a href="https://github.com/Project-Colony/Shift">Shift</a> (image viewer).<br/>
-KayaBot, Oasis and Shift already publish a <code>colony.json</code>, so Colony lists them as store cards with no download until their first release.
+KayaBot, Oasis, Roxanne and Shift already publish a <code>colony.json</code>, so Colony lists them as store cards with no download until their first release.
 </p>
 
 > **Status:** Colony installs and updates Collector, D1Gg2r, Grape, Lilypad, MemoryStick, orCAL, Raven,
-> SAM · Colony Edition, Spotter and Xion, and SphereCord on Linux. Eidos, Exospine, KayaBot, Oasis and Shift
+> SAM · Colony Edition, Spotter and Xion, and SphereCord on Linux. Eidos, Exospine, KayaBot, Oasis, Roxanne and Shift
 > are listed only, and Colony Firewall Control is not in the store yet. Every app Colony installs, and Colony itself, ships release
 > builds signed with the organization's ed25519 key. Linux is the supported platform, where the released apps
 > are developed and tested. Windows and macOS builds are best-effort and are not code-signed: the shared release
