@@ -53,7 +53,7 @@ and lists the apps already on your system alongside them.
 |:---|:---|:---:|:---:|
 | **[Colony](https://github.com/Project-Colony/Colony)** | Launcher and app store for the whole ecosystem | Linux · Windows · macOS | it *is* the store |
 | **[Eidos](https://github.com/Project-Colony/Eidos)** | Native Linux mod manager for Bethesda games: mods are merged into a private, per-launch FUSE view, so the game directory is never touched. Listed in Colony, but installed from its release tarball with the bundled `install.sh` (or `makepkg` on Arch) | Linux | listed only |
-| **[Colony Firewall Control](https://github.com/Project-Colony/Colony-Firewall-Control)** | Application-aware outbound firewall, a Rust port of opensnitch with per-app prompts, a CLI and a tray companion | Linux | not yet |
+| **[Colony Firewall Control](https://github.com/Project-Colony/Colony-Firewall-Control)** | Application-aware outbound firewall, a Rust port of opensnitch with per-app prompts, a CLI and a tray companion | Linux | listed only |
 | **[Raven](https://github.com/Project-Colony/Raven)** | Experimental: runs Windows programs from Linux against a real Windows installation mounted as C:, with Wine kept only at the syscall boundary | Linux | ✅ |
 | **[Grape](https://github.com/Project-Colony/Grape)** | Music player for the music you already own: your folder is the library, with tag and cover art reading | Linux · Windows · macOS | ✅ |
 | **[SphereCord](https://github.com/Project-Colony/SphereCord)** | Discord client (a fork of Equibop) with Equicord preinstalled and the Colony palettes bundled in | Linux · Windows | ✅ Linux |
@@ -74,12 +74,12 @@ Also in development, with no release yet: <a href="https://github.com/Project-Co
 <a href="https://github.com/Project-Colony/Avalon">Avalon</a> (writing studio), <a href="https://github.com/Project-Colony/GitSpace">GitSpace</a> (Git client),<br/>
 <a href="https://github.com/Project-Colony/KayaBot">KayaBot</a> (media renamer), <a href="https://github.com/Project-Colony/Oasis">Oasis</a> (weather notifications),
 <a href="https://github.com/Project-Colony/Roxanne">Roxanne</a> (code editor) and <a href="https://github.com/Project-Colony/Shift">Shift</a> (image viewer).<br/>
-GitSpace, KayaBot, Oasis, Roxanne and Shift already publish a <code>colony.json</code>, so Colony lists them as store cards with no download until their first release.
+Avalon, GitSpace, KayaBot, Oasis, Roxanne and Shift already publish a <code>colony.json</code>, so Colony lists them as store cards with no download until their first release.
 </p>
 
 > **Status:** Colony installs and updates Collector, D1Gg2r, Grape, Lilypad, MemoryStick, orCAL, Raven,
-> SAM · Colony Edition, Spotter and Xion, and SphereCord on Linux. Eidos, Exospine, GitSpace, KayaBot, Oasis, Roxanne and Shift
-> are listed only, and Colony Firewall Control is not in the store yet. Every app Colony installs, and Colony itself, ships release
+> SAM · Colony Edition, Spotter and Xion, and SphereCord on Linux. Eidos, Exospine, Colony Firewall Control, Avalon, GitSpace,
+> KayaBot, Oasis, Roxanne and Shift are listed only. Every app Colony installs, and Colony itself, ships release
 > builds signed with the organization's ed25519 key. Linux is the supported platform, where the released apps
 > are developed and tested. Windows and macOS builds are best-effort and are not code-signed: the shared release
 > workflow can add Authenticode through SignPath, but no app has turned it on yet, and macOS builds are not
@@ -223,7 +223,7 @@ except SphereCord, which shows Discord's own interface in the language set in Di
 <p align="center">Here's what's ahead:</p>
 
 <p align="center">
-◇ Colony Firewall Control in the Colony store<br/>
+◇ Colony Firewall Control installable from the Colony store<br/>
 ◇ First releases for the apps still in development<br/>
 ◇ Code-signed Windows builds<br/>
 ◇ Wider translation coverage across the ecosystem<br/>
