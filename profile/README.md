@@ -197,8 +197,8 @@ aborts the update instead of trusting it.
 </p>
 
 <p align="center">
-Every app Colony installs publishes detached signatures against that same key, and all of them but Oasis<br/>
-declare <code>"signed": true</code> in their manifest, so a missing signature aborts the install. Most releases also carry the signed <code>.meta</code> file.<br/>
+Every app Colony installs declares <code>"signed": true</code> in its manifest and publishes detached signatures<br/>
+against that same key, so a missing signature aborts the install. Most releases also carry the signed <code>.meta</code> file.<br/>
 Once an app has been installed with a verified signature or <code>.meta</code> file, the launcher<br/>
 refuses a later build without it: a repository cannot quietly stop signing.
 </p>
