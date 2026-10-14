@@ -64,7 +64,8 @@ and lists the apps already on your system alongside them.
 | **[Lilypad](https://github.com/Project-Colony/Lilypad-Vault)** | Local-first password manager: several encrypted vaults, with a desktop app, a terminal interface and a command-line client sharing one core | Linux · Windows · macOS | ✅ |
 | **[Collector](https://github.com/Project-Colony/Collector)** | Terminal system monitor: CPU, memory, disks, network and processes, live in any terminal, locally or over SSH | Linux · Windows · macOS | ✅ |
 | **[MemoryStick](https://github.com/Project-Colony/MemoryStick)** | Markdown viewer that renders a file the way GitHub does, with highlighted code, math, Mermaid diagrams and a table of contents | Linux · Windows · macOS | ✅ |
-| **[Xion](https://github.com/Project-Colony/Xion)** | File explorer with tabs, a sidebar of drives and favourites, and list and grid views. Its interface is in French only for now | Linux · Windows | ✅ |
+| **[Xion](https://github.com/Project-Colony/Xion)** | File explorer with tabs, a sidebar of drives and favourites, and list and grid views. Its interface is in French only until the next release, which adds English | Linux · Windows | ✅ |
+| **[Oasis](https://github.com/Project-Colony/Oasis)** | Current weather in a native notification, one hotkey away: a small background program with no window, and no account or API key | Linux · Windows · macOS | ✅ |
 | **[Exospine](https://github.com/Project-Colony/Exospine)** | Portable desktop email client (IMAP, SMTP, OAuth2). No release yet, so Colony lists it without a download | none yet | listed only |
 
 </div>
@@ -72,14 +73,14 @@ and lists the apps already on your system alongside them.
 <p align="center">
 Also in development, with no release yet: <a href="https://github.com/Project-Colony/Artemis">Artemis</a> (chat client and relay server),
 <a href="https://github.com/Project-Colony/Avalon">Avalon</a> (writing studio), <a href="https://github.com/Project-Colony/GitSpace">GitSpace</a> (Git client),<br/>
-<a href="https://github.com/Project-Colony/KayaBot">KayaBot</a> (media renamer), <a href="https://github.com/Project-Colony/Oasis">Oasis</a> (weather notifications),
-<a href="https://github.com/Project-Colony/Roxanne">Roxanne</a> (code editor) and <a href="https://github.com/Project-Colony/Shift">Shift</a> (image viewer).<br/>
-Avalon, GitSpace, KayaBot, Oasis, Roxanne and Shift already publish a <code>colony.json</code>, so Colony lists them as store cards with no download until their first release.
+<a href="https://github.com/Project-Colony/KayaBot">KayaBot</a> (media renamer), <a href="https://github.com/Project-Colony/Roxanne">Roxanne</a> (code editor)
+and <a href="https://github.com/Project-Colony/Shift">Shift</a> (image viewer).<br/>
+Avalon, GitSpace, KayaBot, Roxanne and Shift already publish a <code>colony.json</code>, so Colony lists them as store cards with no download until their first release.
 </p>
 
-> **Status:** Colony installs and updates Collector, D1Gg2r, Grape, Lilypad, MemoryStick, orCAL, Raven,
+> **Status:** Colony installs and updates Collector, D1Gg2r, Grape, Lilypad, MemoryStick, Oasis, orCAL, Raven,
 > SAM · Colony Edition, Spotter and Xion, and SphereCord on Linux. Eidos, Exospine, Colony Firewall Control, Avalon, GitSpace,
-> KayaBot, Oasis, Roxanne and Shift are listed only. Every app Colony installs, and Colony itself, ships release
+> KayaBot, Roxanne and Shift are listed only. Every app Colony installs, and Colony itself, ships release
 > builds signed with the organization's ed25519 key. Linux is the supported platform, where the released apps
 > are developed and tested. Windows and macOS builds are best-effort and are not code-signed: the shared release
 > workflow can add Authenticode through SignPath, but no app has turned it on yet, and macOS builds are not
@@ -116,6 +117,7 @@ Startup is instant, memory usage is minimal, and your CPU stays cool.
 <p align="center">
 <b>Beauty is not optional</b>: Colony, Eidos, Raven, Grape, D1Gg2r, Xion and Colony Firewall Control<br/>
 share one theme library, <code>colony-ui</code>, so a palette looks the same wherever you meet it.<br/>
+KayaBot, Roxanne and Shift are built on it too, and Spotter and Lilypad move to it in their next release.<br/>
 Tools should look as good as they work.
 </p>
 
@@ -168,7 +170,7 @@ no theme files to download, no runtime parsing.
 </table>
 
 <p align="center">
-<sub>...and Everblush, Solarized, One Dark, Monokai, Ayu, Material, Flexoki, Nightfox, Sonokai,<br/>
+<sub>...and Everblush, Solarized, One Dark, Monokai Pro, Ayu, Material, Flexoki, Nightfox, Sonokai,<br/>
 Oxocarbon, Night Owl, Iceberg, Horizon, Melange, Synthwave '84, Modus, Parchment, and a fan-made Stellar Blade set.</sub>
 </p>
 
@@ -178,8 +180,9 @@ Each theme combines with <b>8 accent colors</b>. SphereCord bundles 57 of the 59
 </p>
 
 <p align="center">
-Colony, D1Gg2r, Eidos, Grape, MemoryStick, Spotter and Xion offer a high-contrast mode,<br/>
-and Colony, Grape and MemoryStick can also switch the interface to the OpenDyslexic font.
+Colony, D1Gg2r, Eidos, Grape, MemoryStick, orCAL, Spotter and Xion offer a high-contrast mode,<br/>
+and Colony, MemoryStick and orCAL can also switch the interface to the OpenDyslexic font they bundle.<br/>
+Grape offers the same switch, and uses OpenDyslexic when the font is installed on the system.
 </p>
 
 &nbsp;
@@ -211,8 +214,8 @@ no language packs to download and no external files.
 
 <p align="center">
 D1Gg2r offers <b>50 selectable languages</b> (falling back to English where a translation is incomplete),<br/>
-while Colony, Grape and MemoryStick are bilingual in <b>English and French</b>.<br/>
-Xion's interface is in French only for now, and the other released apps are in English,<br/>
+while Colony, Grape, MemoryStick, Oasis and orCAL are bilingual in <b>English and French</b>.<br/>
+Xion's interface is in French only until its next release, which adds English, and the other released apps are in English,<br/>
 except SphereCord, which shows Discord's own interface in the language set in Discord.
 </p>
 
