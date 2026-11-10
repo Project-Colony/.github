@@ -1,0 +1,10 @@
+# Blank issues stay on: a question or an idea that fits neither form should
+# not be forced through the bug report's fields.
+blank_issues_enabled: true
+
+contact_links:
+  # The default config cannot name a repository, so this link points at the
+  # policy, which explains how to open a private advisory on the affected one.
+  - name: Report a security vulnerability (private)
+    url: https://github.com/Project-Colony/.github/blob/main/SECURITY.md
+    about: Never open a public issue for a vulnerability. Report it privately from the repository's Security tab, as the policy describes.
