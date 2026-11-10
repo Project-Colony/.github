@@ -66,21 +66,29 @@ and lists the apps already on your system alongside them.
 | **[MemoryStick](https://github.com/Project-Colony/MemoryStick)** | Markdown viewer that renders a file the way GitHub does, with highlighted code, math, Mermaid diagrams and a table of contents | Linux · Windows · macOS | ✅ |
 | **[Xion](https://github.com/Project-Colony/Xion)** | File explorer with tabs, a sidebar of drives and favourites, and list and grid views. Its interface is in French only until the next release, which adds English | Linux · Windows | ✅ |
 | **[Oasis](https://github.com/Project-Colony/Oasis)** | Current weather in a native notification, one hotkey away: a small background program with no window, and no account or API key | Linux · Windows · macOS | ✅ |
-| **[Exospine](https://github.com/Project-Colony/Exospine)** | Portable desktop email client (IMAP, SMTP, OAuth2). No release yet, so Colony lists it without a download | none yet | listed only |
+| **[Shift](https://github.com/Project-Colony/Shift)** | Early: a fast, local, keyboard-friendly image viewer | Linux · Windows · macOS | ✅ |
+| **[KayaBot](https://github.com/Project-Colony/KayaBot)** | Early prototype: renames movie and TV episode files by matching them against TMDB, TheTVDB, TVmaze and OMDb, with a preview and a dry run first | Linux · Windows · macOS | ✅ |
+| **[Avalon](https://github.com/Project-Colony/Avalon)** | Early: writing studio for novels, scripts and other long-form projects, with a binder, snapshots, backups and compile | Linux · Windows · macOS | ✅ |
+| **[Roxanne](https://github.com/Project-Colony/Roxanne)** | Early: lightweight code editor, with experimental language server support for Rust through rust-analyzer | Linux · Windows · macOS | ✅ |
+| **[GitSpace](https://github.com/Project-Colony/GitSpace)** | Early: Git client that gathers your GitHub and GitLab repositories in one panel-based interface | Linux · Windows · macOS | ✅ |
+| **[Exospine](https://github.com/Project-Colony/Exospine)** | Early: portable desktop email client (IMAP, SMTP, OAuth2) | Linux · Windows · macOS | ✅ |
+| **[Artemis](https://github.com/Project-Colony/Artemis)** | Early prototype: chat client, with an Axum and PostgreSQL relay server you host yourself | Linux · Windows · macOS (relay: Linux) | ✅ |
 
 </div>
 
 <p align="center">
-Also in development, with no release yet: <a href="https://github.com/Project-Colony/Artemis">Artemis</a> (chat client and relay server),
-<a href="https://github.com/Project-Colony/Avalon">Avalon</a> (writing studio), <a href="https://github.com/Project-Colony/GitSpace">GitSpace</a> (Git client),<br/>
-<a href="https://github.com/Project-Colony/KayaBot">KayaBot</a> (media renamer), <a href="https://github.com/Project-Colony/Roxanne">Roxanne</a> (code editor)
-and <a href="https://github.com/Project-Colony/Shift">Shift</a> (image viewer).<br/>
-Avalon, GitSpace, KayaBot, Roxanne and Shift already publish a <code>colony.json</code>, so Colony lists them as store cards with no download until their first release.
+The apps marked <i>Early</i> have signed releases and install from Colony like the rest, but are not ready for everyday use yet:<br/>
+each README's status line says what works and what has not been tested.
 </p>
 
-> **Status:** Colony installs and updates Collector, D1Gg2r, Grape, Lilypad, MemoryStick, Oasis, orCAL, Raven,
-> SAM · Colony Edition, Spotter and Xion, and SphereCord on Linux. Eidos, Exospine, Colony Firewall Control, Avalon, GitSpace,
-> KayaBot, Roxanne and Shift are listed only. Every app Colony installs, and Colony itself, ships release
+<p align="center">
+Also in the organization: <a href="https://github.com/Project-Colony/Overdrive">Overdrive</a>, a local media library with custom metadata, tags and visual previews.<br/>
+It is a fork of MediaChips 1.12, an Electron app with its own installers, and is not in Colony; a native Rust rewrite is planned.
+</p>
+
+> **Status:** Colony installs and updates Artemis, Avalon, Collector, D1Gg2r, Exospine, GitSpace, Grape, KayaBot, Lilypad,
+> MemoryStick, Oasis, orCAL, Raven, Roxanne, SAM · Colony Edition, Shift, Spotter and Xion, and SphereCord on Linux.
+> Eidos and Colony Firewall Control are listed only. Every app Colony installs, and Colony itself, ships release
 > builds signed with the organization's ed25519 key. Linux is the supported platform, where the released apps
 > are developed and tested. Windows and macOS builds are best-effort and are not code-signed: the shared release
 > workflow can add Authenticode through SignPath, but no app has turned it on yet, and macOS builds are not
@@ -214,8 +222,9 @@ no language packs to download and no external files.
 
 <p align="center">
 D1Gg2r offers <b>50 selectable languages</b> (falling back to English where a translation is incomplete),<br/>
-while Colony, Grape, MemoryStick, Oasis and orCAL are bilingual in <b>English and French</b>.<br/>
-Xion's interface is in French only until its next release, which adds English, and the other released apps are in English,<br/>
+while Colony, Grape, KayaBot, MemoryStick, Oasis, orCAL, Roxanne and Shift are bilingual in <b>English and French</b>.<br/>
+Xion's interface is in French only until its next release, which adds English, and GitSpace is in English with its Preferences window in French<br/>
+until it moves to the shared UI kit. The other released apps are in English,<br/>
 except SphereCord, which shows Discord's own interface in the language set in Discord.
 </p>
 
@@ -227,7 +236,7 @@ except SphereCord, which shows Discord's own interface in the language set in Di
 
 <p align="center">
 ◇ Colony Firewall Control installable from the Colony store<br/>
-◇ First releases for the apps still in development<br/>
+◇ Everyday-ready releases of the apps marked <i>Early</i><br/>
 ◇ Code-signed Windows builds<br/>
 ◇ Wider translation coverage across the ecosystem<br/>
 ◇ More packages in the Nix flake and the Arch Colony repository<br/>
